@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | P&amp;A Health Services LLC</title>
+<meta name="description" content="Contact P&amp;A Health Services LLC.">
+<link rel="icon" type="image/png" href="images/favicon.png"><link rel="apple-touch-icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nunito+Sans:wght@400;600;700;800&family=Kalam:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topbar"><div class="container">
+  <span class="tag">Compassion &middot; Care &middot; Excellence</span>
+  <span><a href="tel:+18329850427">📞 832-985-0427</a> &nbsp;|&nbsp; <a href="tel:+14108418149">410-841-8149</a><span class="hide-sm"> &nbsp;|&nbsp; <a href="mailto:Palinthicum@gmail.com">✉ Palinthicum@gmail.com</a></span></span>
+</div></div>
+<header class="nav"><div class="container">
+  <a class="brand" href="index.html"><img src="images/logo.png" alt="P&amp;A Health Services LLC"></a>
+  <button class="burger" aria-label="Open menu">☰</button>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="has-dd"><a href="services.html">Services</a><ul class="dd"><li><a href="services.html"><b>All Services</b></a></li><li><a href="home-care.html">Home Care Services</a></li><li><a href="behavioral-health.html">Behavioral Health &amp; Wellness</a></li><li><a href="counseling.html">Christian Counseling, Coaching, Mentorship &amp; Chaplaincy</a></li><li><a href="chronic-pain.html">Chronic Pain Management (Non-Invasive)</a></li><li><a href="public-health.html">Public Health Consulting, Research &amp; Referrals</a></li></ul></li>
+    <li><a href="store.html">Holistic Store</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a class="btn btn-primary" href="contact.html#start">Start Now</a></li>
+  </ul>
+</div></header>
+<section class="page-head" style="--bg:url('images/hero.jpg')"><div class="container"><span class="eyebrow">Contact Us</span><h1>Let&rsquo;s <span style="color:#a9d6f7">Start Now</span></h1><p>Call, email or send a message &mdash; we&rsquo;ll respond promptly.</p><div class="btn-row"><a class="btn btn-light" href="tel:+18329850427">📞 832-985-0427</a></div></div><div class="wave"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 40 C 360 90 720 0 1080 30 S 1440 50 1440 50 V70 H0Z" fill="#ffffff"/></svg></div></section>
+<section id="start"><div class="container split" style="align-items:start">
+  <div class="reveal">
+    <span class="eyebrow">Get in Touch</span><h2>We&rsquo;re Here <span class="o">to Help</span></h2>
+    <div class="info" style="margin-top:22px">
+      <div class="info-item"><div class="ic" style="background:var(--orange)">📞</div><div><small>Phone</small><a href="tel:+18329850427">832-985-0427</a> &middot; <a href="tel:+14108418149">410-841-8149</a></div></div>
+      <div class="info-item"><div class="ic" style="background:var(--green)">✉️</div><div><small>Email</small><a href="mailto:Palinthicum@gmail.com">Palinthicum@gmail.com</a></div></div>
+      <div class="info-item"><div class="ic" style="background:var(--blue)">📠</div><div><small>Fax</small><span>410-729-6727</span></div></div>
+      <div class="info-item"><div class="ic" style="background:var(--purple)">📍</div><div><small>Office</small><span>404 South Camp Meade Road, Linthicum Heights, MD 21090</span></div></div>
+    </div>
+    <iframe class="map" style="margin-top:18px" loading="lazy" title="Office map" src="https://www.google.com/maps?q=404+South+Camp+Meade+Road,+Linthicum+Heights,+MD+21090&output=embed"></iframe>
+  </div>
+  <form class="formcard reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thank-you.html">
+    <input type="hidden" name="form-name" value="contact"><p hidden><input name="bot-field"></p>
+    <h3>Send Us a Message</h3>
+    <div class="row"><div><label>Your name</label><input name="name" required></div><div><label>Phone</label><input name="phone" type="tel" required></div></div>
+    <label>Email</label><input name="email" type="email">
+    <label>I&rsquo;m interested in</label><select name="service" id="service"><option>Home Care Services</option><option>Behavioral Health & Wellness</option><option>Christian Counseling, Coaching, Mentorship & Chaplaincy</option><option>Chronic Pain Management (Non-Invasive)</option><option>Public Health Consulting, Research & Referrals</option><option>Holistic Store</option><option>Not sure yet</option></select>
+    <label>How can we help?</label><textarea name="message" id="message" placeholder="Tell us a little about what you need..."></textarea>
+    <button class="btn btn-primary" style="margin-top:18px" type="submit">Send Message →</button>
+    <p class="note">Please don&rsquo;t share detailed medical records here &mdash; we&rsquo;ll discuss health details with you directly.</p>
+  </form>
+</div></section>
+<script>
+const q=new URLSearchParams(location.search).get('interest');
+if(q){document.getElementById('service').value='Holistic Store';document.getElementById('message').value='I am interested in: '+q;}
+</script>
+
+<footer><div class="container">
+  <div class="grid">
+    <div>
+      <a class="flogo" href="index.html"><img src="images/logo.png" alt="P&amp;A Health Services LLC"></a>
+      <p>Whole-person care for body, mind and spirit &mdash; home care, behavioral wellness, faith-based counseling, non-invasive pain support and public health services.</p>
+      <p style="margin-top:10px">Home care in partnership with <strong style="color:#fff">Awesome Healthcare Solutions LLC</strong></p>
+    </div>
+    <div><h4>Main Menu</h4><ul>
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li>
+      <li><a href="store.html">Holistic Store</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div><h4>Our Services</h4><ul><li><a href="home-care.html">Home Care Services</a></li><li><a href="behavioral-health.html">Behavioral Health &amp; Wellness</a></li><li><a href="counseling.html">Christian Counseling</a></li><li><a href="chronic-pain.html">Chronic Pain Management</a></li><li><a href="public-health.html">Public Health Consulting</a></li></ul></div>
+    <div><h4>Contact Us</h4><ul>
+      <li>📍 404 South Camp Meade Road<br>Linthicum Heights, MD 21090</li>
+      <li>📞 <a href="tel:+18329850427">832-985-0427</a> &middot; <a href="tel:+14108418149">410-841-8149</a></li>
+      <li>📠 Fax: 410-729-6727</li>
+      <li>✉ <a href="mailto:Palinthicum@gmail.com">Palinthicum@gmail.com</a></li></ul></div>
+  </div>
+  <div class="copy"><span>&copy; <span id="year"></span> P&amp;A Health Services LLC. All rights reserved.</span><span>Serving Anne Arundel County &amp; surrounding Maryland communities</span></div>
+</div></footer>
+<a class="callfab" href="tel:+18329850427" aria-label="Call us">📞</a>
+<script src="script.js"></script>
+</body>
+</html>
