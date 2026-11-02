@@ -81,7 +81,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);bac
 .ribbon span{font-size:.88rem;color:#cbd8f3}
 
 /* page header */
-.page-head{position:relative;color:#fff;padding:96px 0 110px;background:linear-gradient(110deg,rgba(28,40,51,.94) 0%,rgba(36,72,107,.82) 55%,rgba(36,72,107,.45) 100%),var(--bg) center/cover}
+.page-head{position:relative;color:#fff;padding:96px 0 110px;background-image:linear-gradient(110deg,rgba(28,40,51,.94) 0%,rgba(36,72,107,.85) 55%,rgba(36,72,107,.5) 100%),var(--bg);background-size:cover;background-position:center;background-color:var(--green-dk)}
 .page-head h1{color:#fff;max-width:760px}
 .page-head p{color:#dbe4f7;max-width:640px;margin-top:14px;font-size:1.1rem}
 .page-head .eyebrow{color:#a9d6f7}.page-head .eyebrow::before{background:#a9d6f7}
@@ -257,3 +257,25 @@ footer ul{list-style:none}footer li{padding:4px 0}
   .has-dd.open .dd{display:block}
   .dd a{padding:10px 20px;font-size:.9rem;color:var(--muted)}
 }
+
+/* category cards */
+.catc .in{position:relative;padding-top:34px;border-top-color:var(--c)}
+.catc .cic{position:absolute;top:-26px;left:22px;width:52px;height:52px;border-radius:14px;background:var(--c);color:#fff;display:grid;place-items:center;font-size:1.5rem;box-shadow:0 8px 18px rgba(0,0,0,.15)}
+.catc h3{font-size:1.02rem}
+.catc .more{color:var(--c)}
+.pcard img{background:var(--green-lt)}
+.chips a{color:#fff}
+.chips a:hover span{background:rgba(255,255,255,.22)}
+/* feature rows */
+.features{display:grid;gap:90px}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.feature.rev .fimg{order:2}
+.fimg{position:relative}
+.fimg img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:24px;box-shadow:var(--shadow);background:var(--green-lt)}
+.feature .fimg::after{content:"";position:absolute;inset:auto -16px -16px auto;width:45%;height:45%;border-radius:24px;background:var(--orange-lt);z-index:-1}
+.feature.rev .fimg::after{inset:auto auto -16px -16px}
+.ftxt .num{font-family:Montserrat;font-weight:800;font-size:3rem;color:var(--orange-lt);-webkit-text-stroke:1.5px var(--orange);line-height:1;display:block;margin-bottom:8px}
+.ftxt h3{font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:800;margin-bottom:12px}
+.ftxt p{color:var(--muted);font-size:1.05rem;margin-bottom:14px}
+.ftxt .btn{margin-top:18px}
+@media (max-width:860px){.feature{grid-template-columns:1fr;gap:26px}.feature.rev .fimg{order:0}.features{gap:64px}}
