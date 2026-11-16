@@ -81,7 +81,9 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);bac
 .ribbon span{font-size:.88rem;color:#cbd8f3}
 
 /* page header */
-.page-head{position:relative;color:#fff;padding:96px 0 110px;background-image:linear-gradient(110deg,rgba(28,40,51,.94) 0%,rgba(36,72,107,.85) 55%,rgba(36,72,107,.5) 100%),var(--bg);background-size:cover;background-position:center;background-color:var(--green-dk)}
+.page-head{position:relative;overflow:hidden;color:#fff;padding:96px 0 110px;background:radial-gradient(circle at 85% 20%,rgba(74,144,200,.45) 0,transparent 45%),radial-gradient(circle at 10% 90%,rgba(61,135,196,.3) 0,transparent 40%),linear-gradient(120deg,#1c2833 0%,#24486b 60%,#2c6ea6 100%)}
+.page-head .container{position:relative;z-index:1}
+.page-head::after{content:"";position:absolute;right:5%;top:42%;transform:translateY(-50%);width:min(320px,38vw);aspect-ratio:1;background:url(images/emblem.png) center/contain no-repeat;opacity:.13;filter:brightness(0) invert(1);pointer-events:none}
 .page-head h1{color:#fff;max-width:760px}
 .page-head p{color:#dbe4f7;max-width:640px;margin-top:14px;font-size:1.1rem}
 .page-head .eyebrow{color:#a9d6f7}.page-head .eyebrow::before{background:#a9d6f7}
@@ -312,3 +314,10 @@ footer ul{list-style:none}footer li{padding:4px 0}
 .gcal{margin-top:40px;background:#fff;border-radius:24px;padding:26px;box-shadow:var(--shadow)}
 .gcal iframe{width:100%;height:640px;border:0;border-radius:14px;margin-top:12px}
 @media (max-width:900px){.booker{grid-template-columns:1fr}.bk-side{border-right:0;border-bottom:1px solid var(--line)}.bk-main{padding:26px 20px}.cal{max-width:none}}
+
+/* coming soon */
+.soon-tag{display:inline-block;background:#fff4e0;color:#b26a00;border:1.5px solid #f3b14a;font-weight:800;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:999px;margin-bottom:10px}
+.feature.is-soon .fimg img{filter:grayscale(.45) brightness(.95)}
+.feature.is-soon .btn-primary{background:#fff;color:var(--orange-dk);border-color:var(--orange);box-shadow:none}
+.feature.is-soon .btn-primary:hover{background:var(--orange);color:#fff}
+@media (max-width:760px){.page-head::after{width:180px;right:-30px;opacity:.09}}
